@@ -6,6 +6,7 @@ jobs:
       - run: echo "A" > note.txt
       - uses: actions/upload-artifact@v4
         with:
+          name: note.txt
           path: ./note.txt
       - run: cat note.txt
   two:
