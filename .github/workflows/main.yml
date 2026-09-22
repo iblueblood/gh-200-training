@@ -7,7 +7,7 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           path: ./note.txt
-          archive: false
+          name: note.txt
       - run: cat note.txt
 
   two:
@@ -16,5 +16,6 @@ jobs:
     steps:
       - uses: actions/download-artifact@v7
         with:
+          path: .
           name: note.txt
       - run: cat note.txt
