@@ -9,7 +9,6 @@ jobs:
           path: ./note.txt
           archive: false
       - run: cat note.txt
-
   two:
     needs: one
     runs-on: ubuntu-latest
