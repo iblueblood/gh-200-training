@@ -7,6 +7,7 @@ jobs:
       - run: cat note.txt
 
   two:
+    needs: one
     runs-on: ubuntu-latest
     steps:
       - run: cat note.txt
