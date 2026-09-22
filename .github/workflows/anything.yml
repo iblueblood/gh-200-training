@@ -7,7 +7,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           path: ./note.txt
-          name: note.txt
       - run: cat note.txt
   two:
     needs: one
