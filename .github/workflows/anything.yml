@@ -6,7 +6,7 @@ jobs:
       - run: echo "A" > note.txt
       - uses: actions/upload-artifact@v7
         with:
-          path: note.txt
+          path: ./note.txt
           archive: false
       - run: cat note.txt
 
@@ -16,5 +16,5 @@ jobs:
     steps:
       - uses: actions/download-artifact@v7
         with:
-          path: note.txt
+          path: ./note.txt
       - run: cat note.txt
