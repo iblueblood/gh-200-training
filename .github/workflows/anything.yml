@@ -17,5 +17,4 @@ jobs:
       - uses: actions/download-artifact@v7
         with:
           name: note.txt
-          path: .
       - run: cat note.txt
